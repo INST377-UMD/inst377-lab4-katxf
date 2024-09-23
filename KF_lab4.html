@@ -1,0 +1,61 @@
+<!-- INST377-Lab 4
+ Katherine Fuentes -->
+ <html>
+    <head> 
+        <title> Lab 4 </title>
+        <link rel="stylesheet" href="KF_lab4_style.css">
+    </head>
+<!-- 4 Buttons -->
+    <body>
+        <div class="heading">
+            <h1> Lab 4 </h1>
+        </div>
+        <div class="section1"> 
+            <form name="basicForm">
+                <label> Name: </label>
+                <input type="text" id="name1"> 
+                <button onclick="warning()"> Alert Me! </button> <!-- name of the user -->
+            </form>
+        </div>
+        <div class="section2">
+            <form name="tester">
+                <label> Text Tester: </label>
+                <input type="text" id="test">
+                <button onclick="valid()" > Validate Text </button> <!-- testing if special characters go through the form -->
+            </form>  
+        </div>
+        <div class="section3">
+            <button onclick="pageColor()" id="colorChange"> Change Color </button> <!-- changing color of page  -->
+        </div>
+        <div class="section4">
+            <button onclick="textVal()" id="adding"> Add Text </button> <!-- adding text to the heading -->
+        </div>
+        <script type="text/javascript">
+            function warning() {
+                if (document.basicForm.name1.value == false){
+                    alert('Must type in name');
+                }  else {
+                    alert("Hi" + name1);
+                    return true;
+                }
+             }
+            function valid() {
+                var validation = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+                if(validation.test(document.tester.test.value))
+                    alert("Try Again");   
+                    return false;
+            }
+            function pageColor(){
+                if(document.getElementById('colorChange') == true){
+                    document.body.style.backgroundColor = 'pink';
+                } else {
+                    document.body.style.backgroundColor = 'purple';
+                    return false;
+                }
+            }
+            function addText(){
+                if(document.getElementById('adding') == false){
+                    let user = prompt(heading);
+                }
+            }
+        </script>
