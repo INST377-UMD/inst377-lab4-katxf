@@ -1,0 +1,38 @@
+/* Katherine Fuentes Lab 4 Starting Javascript */
+
+body {
+    background-color: purple;
+    color: white;
+}
+
+.section1 {
+   border: solid white; 
+   padding: 10px;
+   border-radius: 10px;
+   margin: auto;
+   text-align: center;
+}
+
+.section2{
+    border: solid white; 
+    padding: 10px;
+    border-radius: 10px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.section3 {
+    border: solid white; 
+    padding: 10px;
+    border-radius: 10px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.section4 {
+    border: solid white; 
+    padding: 10px;
+    border-radius: 10px;
+    margin-inline: auto;
+    text-align: center;
+}
